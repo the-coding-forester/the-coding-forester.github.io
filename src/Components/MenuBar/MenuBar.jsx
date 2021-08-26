@@ -6,7 +6,7 @@ function MenuBar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const handleToggle = () => {
     setNavbarOpen((prev) => !prev);
-  }
+  };
 
   return (
     <div className="menubar" id="menubar">
