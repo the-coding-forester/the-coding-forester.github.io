@@ -1,0 +1,12 @@
+body, html{
+  height: 100vh;
+  color: white
+
+}
+.bg {
+  background-image: url(../../Images/stylized_rx_burn2.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
