@@ -1,12 +1,9 @@
-import Switch from "react-router-dom/Switch";
-import Route from "react-router-dom/Route";
-import Redirect from "react-router-dom/Redirect";
+import { Route, Router, Switch, Redirect } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
-
 
 function Routes() {
   return (
-    <div className="container">
+    <Router className="container">
       <Switch>
         <Route exact={true} path="/">
           <Redirect to={"/HomePage"} />
@@ -15,7 +12,7 @@ function Routes() {
           <HomePage />
         </Route>
       </Switch>
-    </div>
+    </Router>
   );
 }
 

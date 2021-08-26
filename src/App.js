@@ -1,8 +1,6 @@
-import React from "react";
-import Route from "react-router-dom/Route"
-import Router from "react-router-dom/Router"
-import Switch from "react-router-dom/Switch"
-import Routes from "./Routes"
+import "./App.css";
+import { Route, Router, Switch } from "react-router-dom"
+import Routes from "./Routes";
 
 function App() {
   return (
@@ -13,7 +11,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-  );
+  )
 }
 
 export default App;
