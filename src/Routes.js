@@ -6,7 +6,7 @@ function Routes() {
     <Router className="container">
       <Switch>
         <Route exact={true} path="/">
-          <Redirect to={"/HomePage"} />
+          <Redirect to={"/home"} />
         </Route>
         <Route exact={true} path="/home">
           <HomePage />
