@@ -1,9 +1,10 @@
-import { Route, Router, Switch, Redirect } from "react-router-dom";
+import React from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
 
 function Routes() {
   return (
-    <Router className="container">
+    <div className="container">
       <Switch>
         <Route exact={true} path="/">
           <Redirect to={"/home"} />
@@ -12,7 +13,7 @@ function Routes() {
           <HomePage />
         </Route>
       </Switch>
-    </Router>
+    </div>
   );
 }
 
