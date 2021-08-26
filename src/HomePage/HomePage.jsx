@@ -1,7 +1,6 @@
 import React from "react";
 import Banner from "../Components/Banner/Banner";
 import Intro from "../Components/Intro/Intro";
-import MenuBar from "../Components/MenuBar/MenuBar";
 import "./homepage.scss"
 
 function HomePage() {
@@ -9,12 +8,9 @@ function HomePage() {
   return (
     <>
       <main>
-        <div className="homepage">
-          <MenuBar />
-          <div className="sections">
-            <Banner />
-            <Intro />
-          </div>
+        <div className="homepage" id="homepage">
+          <Banner />
+          <Intro />
         </div>
       </main>
     </>

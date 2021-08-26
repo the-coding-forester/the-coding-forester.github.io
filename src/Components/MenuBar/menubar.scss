@@ -1,0 +1,15 @@
+@import "../../global.scss";
+
+.menubar {
+  width: 100%;
+  background-color: $mainColor;
+  color: white;
+  position: sticky-top;
+
+  .wrapper{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
