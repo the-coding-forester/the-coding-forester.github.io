@@ -4,7 +4,7 @@ import "./aboutpage.scss"
 
 function AboutPage() {
   const about = (
-    <div className="body">
+    <div className="about">
       <br />
       <p>
         I am a full-stack developer proficient in Javascript, HTML, CSS and complimentary tools and libraries.

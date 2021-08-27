@@ -4,12 +4,9 @@
   width: 100%;
   background-color: $mainColor;
   color: white;
+  font-weight: bold;
   position: sticky-top;
-
-  .wrapper{
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }

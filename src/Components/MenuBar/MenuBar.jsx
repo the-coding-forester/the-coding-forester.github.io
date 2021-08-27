@@ -1,57 +1,23 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 import "./menubar.scss"
 
 function MenuBar() {
-  const [navbarOpen, setNavbarOpen] = useState(false);
-  const handleToggle = () => {
-    setNavbarOpen((prev) => !prev);
-  };
 
   return (
     <div className="menubar" id="menubar">
-      <div className="wrapper">
-        <div className="left">
-          the-coding-forester
-        </div>
-        <div className="right">
-          <button
-            className="navbar-toggler ml-auto"
-            type="button"
-            onClick={handleToggle}
-          >
-            <span className="navbar-toggler-icon my-toggler"></span>
-          </button>
-          <div className={`navbar-collapse ${navbarOpen ? "expand" : "collapse"}`}>
-            <ul className="navbar-nav mx-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to="/" onClick={handleToggle}>
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <a href="https://docs.google.com/document/d/1hyRQUcwSJTePA45mAb2lu4Lobr2qTue38VIEBUrrBeE/edit?usp=sharing" className="nav-link" onClick={handleToggle}>
-                  Resume
-                </a>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  to="/about"
-                  onClick={handleToggle}
-                >
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                < a href="https://github.com/the-coding-forester" onClick={handleToggle}>
-                  Projects
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <Navbar variant="dark" expand="md" >
+        <Navbar.Brand href="/">the-coding-forester</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="https://drive.google.com/file/d/137Lq4LTOyBtMZnwQ-Qo6TG3imWV4lSyi/view?usp=sharing">Resume/PDF</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="https://github.com/the-coding-forester">Projects/GitHub</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
   )
 }
