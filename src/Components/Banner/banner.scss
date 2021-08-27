@@ -1,15 +1,19 @@
 .banner {
-  background-image: url(../../Images/stylized_rx_burn2.jpg);
+  background-image: url(../../Images/pexels-felix-mittermeier-957024.jpg);
   height: 100vh;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-}
-body, html{
-  height: 100vh;
-  color: white;
-  font-weight: bold;
-  font-size: larger;
-  text-align: center;
+  .item{
+    max-width: 80%;
+    background-color:rgba(211,211,211,0.6);
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    color: black;
+  }
 }
