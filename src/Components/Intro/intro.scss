@@ -1,4 +1,12 @@
 .intro {
   height: 100vh;
   background-color:rgb(253, 237, 207);
+
+  .item{
+    background-color:rgba(211,211,211,0.6);
+    padding: 5%;
+    margin: 5%;
+    border-radius: 25px;
+    text-align: center;
+  }
 }
