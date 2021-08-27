@@ -9,11 +9,31 @@
   justify-content: center;
 
   .item{
-    max-width: 80%;
+    max-width: 90%;
     background-color:rgba(211,211,211,0.6);
-    font-weight: bolder;
-    font-size: xx-large;
-    text-align: center;
+    padding: 5%;
     color: black;
+    font-weight: bold;
+
+    h1 {
+      font-size: 60px;
+      font-weight: inherit;
+    }
+
+    h2{
+      font-size: 35px;
+      font-weight: inherit;
+    }
+
+    h3{
+      font-size: 30px;
+      font-weight: inherit;
+
+      span{
+        font-size: inherit;
+        font-weight: inherit;
+        color: crimson;
+      }
+    }
   }
 }
