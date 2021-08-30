@@ -20,6 +20,7 @@ function Intro() {
         <Row>
           <Col>Connect with Me</Col>
         </Row>
+        <Row><br /></Row>
         <Row>
           <Col>
             <a href="https://github.com/the-coding-forester">
